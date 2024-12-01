@@ -11,7 +11,7 @@ const NavbarMobile: React.FC = () => {
           <section key={nav.text}>
             <a
               href={nav.link}
-              className="modal-link inline-flex items-center gap-2 font-medium text-heading"
+              className="modal-link text-heading inline-flex items-center gap-2 font-medium"
             >
               {nav.iconSvg && <nav.iconSvg className="size-6" />}
               {nav.text}
@@ -22,7 +22,7 @@ const NavbarMobile: React.FC = () => {
                   <li v-for="child in nav.subMenu" key={child.text}>
                     <a
                       href={child.link}
-                      className="p-4 pl-6 text-sm text-content"
+                      className="text-content p-4 pl-6 text-sm"
                     >
                       {child.text}
                     </a>

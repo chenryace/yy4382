@@ -91,7 +91,7 @@ const Toc: React.FC<{
     return (
       <div className={base()}>
         <div
-          className={`${heading()} block pb-2 transition-[color] hover:text-primary`}
+          className={`${heading()} hover:text-primary block pb-2 transition-[color]`}
         >
           <h5>目录</h5>
         </div>
@@ -112,10 +112,10 @@ const Toc: React.FC<{
       triggerAsChild
       trigger={
         <button
-          className="fixed bottom-4 right-4 z-20 animate-onload border bg-card p-2 opacity-0 animate-delay-300 shape-card dark:border-gray-600"
+          className="animate-onload bg-card animate-delay-300 shape-card fixed right-4 bottom-4 z-20 border p-2 opacity-0 dark:border-gray-600"
           onClick={() => setOpen(true)}
         >
-          <MingcuteListCheckLine className="size-6 text-heading" />
+          <MingcuteListCheckLine className="text-heading size-6" />
         </button>
       }
     >

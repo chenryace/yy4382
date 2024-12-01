@@ -1,9 +1,9 @@
 import { tv } from "tailwind-variants";
 export const tvButton = tv({
-  base: "select-none rounded-lg text-content transition-colors",
+  base: "text-content rounded-lg transition-colors select-none",
   variants: {
     color: {
-      primary: "bg-transparent hover:bg-primary/20 active:bg-primary/30",
+      primary: "hover:bg-primary/20 active:bg-primary/30 bg-transparent",
     },
   },
   defaultVariants: {

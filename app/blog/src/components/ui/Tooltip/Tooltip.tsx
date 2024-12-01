@@ -60,7 +60,7 @@ export default function (props: {
                 exit={{ opacity: 0 }}
                 className={
                   props.useContentContainer
-                    ? "border-2 bg-card p-2 text-sm text-content shape-card dark:border-gray-700"
+                    ? "bg-card text-content shape-card border-2 p-2 text-sm dark:border-gray-700"
                     : ""
                 }
               >

@@ -51,9 +51,9 @@ import { tv } from "tailwind-variants";
 const postListPopover = tv({
   extend: popover,
   slots: {
-    base: "bottom-2 right-2 hover:w-20",
+    base: "right-2 bottom-2 hover:w-20",
     contentWrapper: "h-8 group-hover:w-20",
-    content: "mr-5 flex h-full flex-grow text-center text-content center",
+    content: "text-content center mr-5 flex h-full flex-grow text-center",
   },
 });
 const { base, contentWrapper, content, icon } = postListPopover();
@@ -67,7 +67,7 @@ const { base, contentWrapper, content, icon } = postListPopover();
   leftExtraPadding
 >
   <h2 slot="heading">{title}</h2>
-  <ul class="timeline ml-3 flex-grow text-content sm:ml-4">
+  <ul class="timeline text-content ml-3 flex-grow sm:ml-4">
     {
       posts.map((post) => {
         return (

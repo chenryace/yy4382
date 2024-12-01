@@ -23,7 +23,7 @@ onUnmounted(() => {
 });
 </script>
 <template>
-  <div class="rounded-xl bg-card p-2 shadow-lg">
+  <div class="bg-card rounded-xl p-2 shadow-lg">
     <Waline
       :server-u-r-l="serverUrl"
       :path

@@ -8,10 +8,10 @@ const { title, count } = Astro.props;
 ---
 
 <div class="mb-4 ml-2 flex flex-col justify-start space-y-4">
-  <h1 class="text-3xl font-bold text-heading">分类 - {title}</h1>
+  <h1 class="text-heading text-3xl font-bold">分类 - {title}</h1>
   <span class="text-gray-600 dark:text-gray-400">
     该分类共有 {count} 篇文章。
-    <a href={sitePaths.postList} class="text-sm text-primary"
+    <a href={sitePaths.postList} class="text-primary text-sm"
       >查看所有文章<i class="i-mingcute-external-link-line"></i></a
     >
   </span>

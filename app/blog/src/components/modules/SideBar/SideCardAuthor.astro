@@ -19,27 +19,27 @@ const { articles, words, tags } = await getStatistics();
       />
     </div>
     <div class="flex shrink-0 flex-col gap-2 lg:items-center">
-      <h5 class="relative text-4xl font-semibold text-heading">
+      <h5 class="text-heading relative text-4xl font-semibold">
         {authorName}
       </h5>
       <div class="flex gap-4">
         <div class="flex flex-col items-center">
-          <span class="text-xl text-content">
+          <span class="text-content text-xl">
             {articles}
           </span>
-          <span class="text-sm text-comment opacity-80">文章</span>
+          <span class="text-comment text-sm opacity-80">文章</span>
         </div>
         <div class="flex flex-col items-center">
-          <span class="text-xl text-content">
+          <span class="text-content text-xl">
             {(words / 10000).toFixed(1)}
           </span>
-          <span class="text-sm text-comment opacity-80">万字</span>
+          <span class="text-comment text-sm opacity-80">万字</span>
         </div>
         <div class="flex flex-col items-center">
-          <span class="text-xl text-content">
+          <span class="text-content text-xl">
             {tags}
           </span>
-          <span class="text-sm text-comment opacity-80">标签</span>
+          <span class="text-comment text-sm opacity-80">标签</span>
         </div>
       </div>
       <div class="flex gap-2">
@@ -48,7 +48,7 @@ const { articles, words, tags } = await getStatistics();
             <a
               href={social.link}
               target="_blank"
-              class="flex size-9 rounded-lg border border-primary/30 bg-primary/20 p-1.5 transition-all center hover:scale-105 hover:bg-primary/25"
+              class="border-primary/30 bg-primary/20 center hover:bg-primary/25 flex size-9 rounded-lg border p-1.5 transition-all hover:scale-105"
               rel="noreferer"
             >
               <Icon

@@ -60,7 +60,7 @@ const NavbarWrapper: React.FC<NavbarWrapperProps> = ({ children }) => {
   return (
     <nav ref={navRef} className="sticky top-0 z-20 h-16 min-h-16 w-full">
       <div
-        className={`absolute inset-y-0 left-1/2 h-full -translate-x-1/2 transform-gpu text-heading shadow backdrop-blur-lg ${isFixed ? "w-screen" : "w-full"} ${isFixed ? "bg-card/80" : "bg-card"} ${isFixed ? "rounded-none" : "rounded-card"} ${isFixed ? "transition-expand" : "transition-shrink"} `}
+        className={`text-heading absolute inset-y-0 left-1/2 h-full -translate-x-1/2 transform-gpu shadow backdrop-blur-lg ${isFixed ? "w-screen" : "w-full"} ${isFixed ? "bg-card/80" : "bg-card"} ${isFixed ? "rounded-none" : "rounded-card"} ${isFixed ? "transition-expand" : "transition-shrink"} `}
         style={{ viewTransitionName: "navbar" }}
       >
         {children}
@@ -83,7 +83,7 @@ const SearchBar: React.FC = () => {
       <input
         type="text"
         name="query"
-        className="w-20 bg-transparent outline-none transition-all focus:w-40 active:w-40 dark:text-white"
+        className="w-20 bg-transparent transition-all outline-none focus:w-40 active:w-40 dark:text-white"
         placeholder="Search..."
       />
       <button type="submit">
@@ -95,11 +95,11 @@ const SearchBar: React.FC = () => {
 
 const ReactiveSearchBar: React.FC = () => {
   return (
-    <div className="flex center">
+    <div className="center flex">
       <div className="hidden md:block">
         <SearchBar />
       </div>
-      <div className="md:hidden flex center">
+      <div className="center flex md:hidden">
         <Popover.Root>
           <Popover.Trigger>
             <MingcuteSearch3Line className="size-7" />
@@ -111,7 +111,7 @@ const ReactiveSearchBar: React.FC = () => {
               align="end"
               alignOffset={-8}
             >
-              <div className="z-50 rounded-lg bg-card">
+              <div className="bg-card z-50 rounded-lg">
                 <SearchBar />
               </div>
             </Popover.Content>
@@ -156,11 +156,11 @@ const Navbar: React.FC<NavbarProps> = ({ navStats, children }) => {
               <a
                 key={item.text}
                 href={item.link}
-                className={`flex h-full w-20 font-medium center ${
+                className={`center flex h-full w-20 font-medium ${
                   highlight === index ? "text-primary" : "text-heading"
                 } ${tvButton()}`}
               >
-                <span className="z-1 inline-flex select-none items-center gap-1 self-center align-middle">
+                <span className="z-1 inline-flex items-center gap-1 self-center align-middle select-none">
                   {highlight === index && Icon && <Icon />}
                   <span
                     style={{

@@ -11,7 +11,7 @@ const { href, title } = Astro.props;
   <a class="flex flex-col gap-1" href={href}>
     <slot name="title">
       <span
-        class="truncate text-left text-sm text-heading transition group-hover:translate-x-1 md:text-base"
+        class="text-heading truncate text-left text-sm transition group-hover:translate-x-1 md:text-base"
       >
         {title}
       </span>

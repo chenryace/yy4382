@@ -29,10 +29,10 @@ if (post.data.description === undefined) {
   <a
     slot="heading"
     href={getPostPath(post)}
-    class="post-card-heading transition-colors hover:text-primary"
+    class="post-card-heading hover:text-primary transition-colors"
   >
     <h2>{post.data.title}</h2>
   </a>
-  <div class="prose !text-sm dark:prose-invert" set:html={desc} />
+  <div class="prose dark:prose-invert !text-sm" set:html={desc} />
   <PostAttr post={post} />
 </Card>
